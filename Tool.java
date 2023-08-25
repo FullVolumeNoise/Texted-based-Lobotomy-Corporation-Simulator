@@ -10,7 +10,7 @@ public class Tool extends Abnormal{
      * @param ID
      */
     public Tool(String name, String damageType, String rank, int ID) {
-        super(name, "None", rank, ID);
+        super(name, "None", rank, ID, 1 );
     }
 
     public void buff(Agent person){
