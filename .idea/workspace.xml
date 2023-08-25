@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea7e98fa-7c64-4e7c-bc95-d16f1a2c45c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HE.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Texted-based-Lobotomy-Corporation-Simulator-main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Texted-based-Lobotomy-Corporation-Simulator-main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tool.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lobotomy_corp.java" beforeDir="false" afterPath="$PROJECT_DIR$/lobotomy_corp.java" afterDir="false" />
-    </list>
+    <list default="true" id="ea7e98fa-7c64-4e7c-bc95-d16f1a2c45c1" name="Changes" comment="Adjusted IntelliJ configurations and removed He.java since it's redundant." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +19,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "FullVolumeNoise"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="3ed8604a-895a-46a5-aecb-dd2d455a0b41" />
+        <option name="url" value="https://github.com/FullVolumeNoise/Texted-based-Lobotomy-Corporation-Simulator.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -82,7 +88,20 @@
       <option name="presentableId" value="Default" />
       <updated>1692572266010</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adjusted IntelliJ configurations and removed He.java since it's redundant.">
+      <option name="closed" value="true" />
+      <created>1692991763103</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692991763103</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adjusted IntelliJ configurations and removed He.java since it's redundant." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted IntelliJ configurations and removed He.java since it's redundant." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
