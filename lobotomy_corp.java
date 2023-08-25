@@ -1,6 +1,12 @@
 
 import java.lang.*;
 import java.util.*;
+import java.io.*;
+
+import org.json.simple.JSONArray;
+import org.json.simple.parser.*;
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
 public class lobotomy_corp{
   /**
   * Ctrl + Shift + B to run
@@ -18,14 +24,10 @@ public class lobotomy_corp{
   private static Hashtable<String, Agent> agentDict = new Hashtable<String, Agent>();
   private static ArrayList<Integer> IDNums = new ArrayList<Integer>();
   private static ArrayList<Abnormal> Monsters = new ArrayList<Abnormal>();
-  private static String dam[] = {"Red", "White", "Black", "Pale"};
-  private static String danger[] ={"ZAYIN", "TETH", "HE", "WAW", "ALEPH"};
+
   private static ArrayList<Abnormal> inFacility = new ArrayList<Abnormal>();
-  private static List<String> AbnormNames = new ArrayList<>(List.of("Standard Training-Dummy Rabbit", "Scorched Girl",
-          "One Sin and Hundreds of Good Deeds", "The Queen of Hatred", "Happy Teddy Bear", "Red Shoes", "Theresia",
-          "Old Lady", "Nameless Fetus", "The Lady Facing the Wall", "Nothing There", "1.76 MHz", "Singing Machine",
-          "The Silent Orchestra", "Warm-Hearted Woodsman", "The Snow Queen", "Big Bird", "All-Around Helper"
-          ));
+
+
   private static ArrayList<Abnormal> allThings(){
     /** HE Class */
     Abnormal bulletMan = new HE("Der Freischütz", "black", "HE", 169);
@@ -59,21 +61,51 @@ public class lobotomy_corp{
     return beck;
   }
 
-  public static void initAbnorm(int generate){
-    //duplicate abnormalitity names comes from here probably
-    //Abnormal Blue = new Abnormal("Blue", "One Sin and A Hundred Good Deeds", "HE");
-    for(int i = 0; i< generate; i++){
-      int r = (int)(Math.random() * (AbnormNames.size()));
+public static ArrayList<Abnormal> parseAbnormalities(){
 
-      String title = AbnormNames.get(r);
-      int type = (int)(Math.random() * dam.length);
-      int ra = (int)(Math.random() * danger.length);
-      Abnormal thing = new Abnormal(title, dam[type], danger[ra], i);
-      Monsters.add(thing);
-      abnormDict.put(i, thing);
+    try{
+      String basic = "";
+      File myObj = new File("abnormalities.json");
+      Scanner myReader = new Scanner(myObj);
+
+      while (myReader.hasNextLine()) {
+        basic += myReader.nextLine();
+      //  System.out.println(data);
+      }
+
+      myReader.close();
+      System.out.println(basic);
+
+      Object obj = JSONValue.parse(basic);
+      JSONArray array = (JSONArray)obj;
+
+      System.out.println("The 2nd element of array");
+      System.out.println(array.get(0));
+
+      for (int i = 0; i < 83; i++) {
+        JSONObject obj2 = (JSONObject)array.get(i);
+
+        System.out.println(obj2.get("ID"));
+        System.out.println(obj2.get("name"));
+        System.out.println(obj2.get("attackType"));
+        System.out.println(obj2.get("damageRange"));
+        System.out.println(obj2.get("rank"));
+        System.out.println(obj2.get("energyGiven"));
+        System.out.println(obj2.get("counterMax"));
+
+        Monsters.add(new Abnormal((String) obj2.get("name"), (String) obj2.get("attackType"), (String) obj2.get("rank"), Integer.parseInt((String) obj2.get("ID")), Integer.parseInt((String) obj2.get("counterMax"))));
+      }
+
+
+
+    } catch (FileNotFoundException e){
+      System.out.println("An error occurred.");
+      e.printStackTrace();
     }
 
-  }
+  return Monsters;
+  
+}
 
   public static void displayAbnorm(){
     System.out.println("Current Abnormalities in the facility:");
@@ -116,9 +148,7 @@ public class lobotomy_corp{
 
 
     System.out.println("Please select a work type for " + choiceP + " to work with " + choiceA + " on.");
-    for (String type: dam) {
-      System.out.print(type + " ");
-    }
+
     System.out.println();
     String choiceD = in.nextLine();
 
@@ -180,6 +210,9 @@ public class lobotomy_corp{
   }
 
   public static void main(String[] args) {
+
+    parseAbnormalities();
+/**
     Scanner in = new Scanner(System.in);
     System.out.println("Lobotomy Corporation Simulator...");
     LOB = 15;
@@ -202,7 +235,7 @@ public class lobotomy_corp{
     displayAgents();
     System.out.println();
 
-
+*/
 
   }
 

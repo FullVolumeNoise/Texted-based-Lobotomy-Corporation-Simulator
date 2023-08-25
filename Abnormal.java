@@ -10,6 +10,8 @@ public class Abnormal {
   int energyBoxMax;
   int energyBoxesProduced;
   int levelMin;
+
+  int counterMax;
   boolean canEscape;
   ArrayList<String> tips;
   String escapeType;
@@ -19,11 +21,12 @@ public class Abnormal {
    * RANKS: ZAYIN, TETH, HE, WAW, ALEPH
    * Damage Type: RED, WHITE, BLACK, PALE
    * */
-  public Abnormal(String name, String damageType, String rank, int ID){
+  public Abnormal(String name, String damageType, String rank, int ID, int counterMax){
     this.name = name;
     this.damageType = damageType;
     this.rank = rank;
     this.ID = ID;
+    this.counterMax = counterMax;
     tips =  new ArrayList<>();
 
     if(this.rank.equals("ZAYIN")){

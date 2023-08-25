@@ -1,0 +1,749 @@
+[
+    {
+        "ID": "1",
+        "name": "Scorched Girl",
+        "attackType": "RED\n",
+        "damageRange": "2 ^ 4",
+        "rank": "TETH",
+        "energyGiven": "12",
+        "counterMax": "2"
+    },
+    {
+        "ID": "2",
+        "name": "One Sin and Hundreds of Good Deeds",
+        "attackType": "WHITE",
+        "damageRange": "1 ^ 2",
+        "rank": "ZAYIN",
+        "energyGiven": "10",
+        "counterMax": "X"
+    },
+    {
+        "ID": "3",
+        "name": "The Queen of Hatred",
+        "attackType": "BLACK",
+        "damageRange": "3 ^ 4",
+        "rank": "WAW",
+        "energyGiven": "22",
+        "counterMax": "2"
+    },
+    {
+        "ID": "4",
+        "name": "Happy Teddy Bear",
+        "attackType": "WHITE",
+        "damageRange": "2 ^ 4",
+        "rank": "HE",
+        "energyGiven": "15",
+        "counterMax": "X"
+    },
+    {
+        "ID": "5",
+        "name": "Red Shoes",
+        "attackType": "RED",
+        "damageRange": "4 ^ 6",
+        "rank": "HE",
+        "energyGiven": "16",
+        "counterMax": "1"
+    },
+    {
+        "ID": "6",
+        "name": "Theresia",
+        "attackType": "X",
+        "damageRange": "0",
+        "rank": "TETH",
+        "energyGiven": "X",
+        "counterMax": "X"
+    },
+    {
+        "ID": "7",
+        "name": "Old Lady",
+        "attackType": "WHITE",
+        "damageRange": "1 ^ 3",
+        "rank": "TETH",
+        "energyGiven": "14",
+        "counterMax": "4"
+    },
+    {
+        "ID": "8",
+        "name": "Nameless Fetus",
+        "attackType": "RED",
+        "damageRange": "4 ^ 6",
+        "rank": "HE",
+        "energyGiven": "18",
+        "counterMax": "1"
+    },
+    {
+        "ID": "9",
+        "name": "The Lady Facing the Wall",
+        "attackType": "WHITE",
+        "damageRange": "2 ^ 3",
+        "rank": "TETH",
+        "energyGiven": "14",
+        "counterMax": "2"
+    },
+    {
+        "ID": "10",
+        "name": "Nothing There",
+        "attackType": "RED",
+        "damageRange": "6 ^ 9",
+        "rank": "ALEPH",
+        "energyGiven": "33",
+        "counterMax": "1"
+    },
+    {
+        "ID": "11",
+        "name": "1.76 MHz",
+        "attackType": "WHITE",
+        "damageRange": "2 ^ 4",
+        "rank": "TETH",
+        "energyGiven": "12",
+        "counterMax": "4"
+    },
+    {
+        "ID": "12",
+        "name": "Singing Machine",
+        "attackType": "WHITE",
+        "damageRange": "4 ^ 6",
+        "rank": "HE",
+        "energyGiven": "18",
+        "counterMax": "1"
+    },
+    {
+        "ID": "13",
+        "name": "The Silent Orchestra",
+        "attackType": "WHITE",
+        "damageRange": "7 ^ 9",
+        "rank": "ALEPH",
+        "energyGiven": "30",
+        "counterMax": "2"
+    },
+    {
+        "ID": "14",
+        "name": "Warm-Hearted Woodsman",
+        "attackType": "WHITE",
+        "damageRange": "3 ^ 5",
+        "rank": "HE",
+        "energyGiven": "18",
+        "counterMax": "1"
+    },
+    {
+        "ID": "15",
+        "name": "The Snow Queen",
+        "attackType": "WHITE",
+        "damageRange": "4 ^ 5",
+        "rank": "HE",
+        "energyGiven": "18",
+        "counterMax": "X"
+    },
+    {
+        "ID": "16",
+        "name": "Big Bird",
+        "attackType": "BLACK",
+        "damageRange": "2 ^ 6",
+        "rank": "WAW",
+        "energyGiven": "20",
+        "counterMax": "5"
+    },
+    {
+        "ID": "17",
+        "name": "All-Around Helper",
+        "attackType": "RED",
+        "damageRange": "3 ^ 5",
+        "rank": "HE",
+        "energyGiven": "16",
+        "counterMax": "2"
+    },
+    {
+        "ID": "18",
+        "name": "Snow White's Apple",
+        "attackType": "BLACK",
+        "damageRange": "3 ^ 5",
+        "rank": "WAW",
+        "energyGiven": "20",
+        "counterMax": "1"
+    },
+    {
+        "ID": "19",
+        "name": "Spider Bud",
+        "attackType": "RED",
+        "damageRange": "2 ^ 3",
+        "rank": "TETH",
+        "energyGiven": "14",
+        "counterMax": "X"
+    },
+    {
+        "ID": "20",
+        "name": "Beauty and the Beast",
+        "attackType": "WHITE\n",
+        "damageRange": "2 ^ 4",
+        "rank": "TETH",
+        "energyGiven": "12",
+        "counterMax": "X"
+    },
+    {
+        "ID": "21",
+        "name": "Plague Doctor",
+        "attackType": "WHITE",
+        "damageRange": "1 ^ 2",
+        "rank": "ZAYIN",
+        "energyGiven": "10",
+        "counterMax": "1"
+    },
+    {
+        "ID": "22",
+        "name": "WhiteNight",
+        "attackType": "PALE",
+        "damageRange": "7 ^ 8",
+        "rank": "ALEPH",
+        "energyGiven": "35",
+        "counterMax": "3"
+    },
+    {
+        "ID": "23",
+        "name": "Rudolta of the Sleigh",
+        "attackType": "WHITE",
+        "damageRange": "3 ^ 4",
+        "rank": "HE",
+        "energyGiven": "18",
+        "counterMax": "2"
+    },
+    {
+        "ID": "24",
+        "name": "Queen Bee",
+        "attackType": "RED",
+        "damageRange": "4 ^ 6",
+        "rank": "WAW",
+        "energyGiven": "22",
+        "counterMax": "1"
+    },
+    {
+        "ID": "25",
+        "name": "Bloodbath",
+        "attackType": "WHITE",
+        "damageRange": "2 ^ 4",
+        "rank": "TETH",
+        "energyGiven": "14",
+        "counterMax": "X"
+    },
+    {
+        "ID": "26",
+        "name": "Opened Can of WellCheers",
+        "attackType": "RED",
+        "damageRange": "1 ^ 2",
+        "rank": "ZAYIN",
+        "energyGiven": "10",
+        "counterMax": "X"
+    },
+    {
+        "ID": "27",
+        "name": "Alriune",
+        "attackType": "WHITE",
+        "damageRange": "4 ^ 6",
+        "rank": "WAW",
+        "energyGiven": "22",
+        "counterMax": "1"
+    },
+    {
+        "ID": "28",
+        "name": "Forsaken Murderer",
+        "attackType": "RED",
+        "damageRange": "2 ^ 3",
+        "rank": "TETH",
+        "energyGiven": "14",
+        "counterMax": "1"
+    },
+    {
+        "ID": "29",
+        "name": "Child of the Galaxy",
+        "attackType": "BLACK",
+        "damageRange": "2 ^ 3",
+        "rank": "HE",
+        "energyGiven": "16",
+        "counterMax": "5"
+    },
+    {
+        "ID": "30",
+        "name": "Punishing Bird",
+        "attackType": "RED",
+        "damageRange": "2 ^ 4",
+        "rank": "TETH",
+        "energyGiven": "12",
+        "counterMax": "4"
+    },
+    {
+        "ID": "31",
+        "name": "Little Red Riding Hooded Mercenary",
+        "attackType": "RED",
+        "damageRange": "4 ^ 6",
+        "rank": "WAW",
+        "energyGiven": "20",
+        "counterMax": "3"
+    },
+    {
+        "ID": "32",
+        "name": "Big and Will be Bad Wolf",
+        "attackType": "RED",
+        "damageRange": "4 ^ 8",
+        "rank": "WAW",
+        "energyGiven": "22",
+        "counterMax": "2"
+    },
+    {
+        "ID": "33",
+        "name": "Fragment of the Universe",
+        "attackType": "BLACK",
+        "damageRange": "1 ^ 3",
+        "rank": "TETH",
+        "energyGiven": "12",
+        "counterMax": "2"
+    },
+    {
+        "ID": "34",
+        "name": "Crumbling Armor",
+        "attackType": "RED",
+        "damageRange": "2 ^ 4",
+        "rank": "TETH",
+        "energyGiven": "12",
+        "counterMax": "X"
+    },
+    {
+        "ID": "35",
+        "name": "Judgement Bird",
+        "attackType": "PALE",
+        "damageRange": "5 ^ 7",
+        "rank": "WAW",
+        "energyGiven": "24",
+        "counterMax": "2"
+    },
+    {
+        "ID": "36",
+        "name": "Apocalypse Bird",
+        "attackType": "BLACK",
+        "damageRange": "1 ^ 3",
+        "rank": "ALEPH",
+        "energyGiven": "12",
+        "counterMax": "X"
+    },
+    {
+        "ID": "37",
+        "name": "The King of Greed",
+        "attackType": "RED",
+        "damageRange": "5 ^ 7",
+        "rank": "WAW",
+        "energyGiven": "22",
+        "counterMax": "1"
+    },
+    {
+        "ID": "38",
+        "name": "The Little Prince",
+        "attackType": "BLACK",
+        "damageRange": "3 ^ 4",
+        "rank": "WAW",
+        "energyGiven": "24",
+        "counterMax": "2"
+    },
+    {
+        "ID": "39",
+        "name": "Laetitia",
+        "attackType": "BLACK",
+        "damageRange": "2 ^ 4",
+        "rank": "HE",
+        "energyGiven": "16",
+        "counterMax": "X"
+    },
+    {
+        "ID": "40",
+        "name": "Funeral of the Dead Butterflies",
+        "attackType": "WHITE",
+        "damageRange": "4 ^ 6",
+        "rank": "HE",
+        "energyGiven": "16",
+        "counterMax": "2"
+    },
+    {
+        "ID": "41",
+        "name": "Der Freisch�tz",
+        "attackType": "BLACK",
+        "damageRange": "3 ^ 4",
+        "rank": "HE",
+        "energyGiven": "18",
+        "counterMax": "3"
+    },
+    {
+        "ID": "42",
+        "name": "Dream of a Black Swan",
+        "attackType": "WHITE",
+        "damageRange": "5 ^ 6",
+        "rank": "WAW",
+        "energyGiven": "24",
+        "counterMax": "5"
+    },
+    {
+        "ID": "43",
+        "name": "The Dreaming Current",
+        "attackType": "WHITE",
+        "damageRange": "3 ^ 6",
+        "rank": "WAW",
+        "energyGiven": "20",
+        "counterMax": "2"
+    },
+    {
+        "ID": "44",
+        "name": "The Burrowing Heaven",
+        "attackType": "BLACK",
+        "damageRange": "4 ^ 5",
+        "rank": "WAW",
+        "energyGiven": "24",
+        "counterMax": "3"
+    },
+    {
+        "ID": "45",
+        "name": "The Knight of Despair",
+        "attackType": "WHITE",
+        "damageRange": "4 ^ 6",
+        "rank": "WAW",
+        "energyGiven": "22",
+        "counterMax": "X"
+    },
+    {
+        "ID": "46",
+        "name": "The Naked Nest",
+        "attackType": "RED",
+        "damageRange": "5 ^ 7",
+        "rank": "WAW",
+        "energyGiven": "22",
+        "counterMax": "X"
+    },
+    {
+        "ID": "47",
+        "name": "The Mountain of Smiling Bodies",
+        "attackType": "BLACK",
+        "damageRange": "6 ^ 8",
+        "rank": "ALEPH",
+        "energyGiven": "30",
+        "counterMax": "2"
+    },
+    {
+        "ID": "48",
+        "name": "Schadenfreude",
+        "attackType": "RED",
+        "damageRange": "3 ^ 6",
+        "rank": "HE",
+        "energyGiven": "18",
+        "counterMax": "2"
+    },
+    {
+        "ID": "49",
+        "name": "The Heart of Aspiration",
+        "attackType": "X",
+        "damageRange": "0",
+        "rank": "TETH",
+        "energyGiven": "X",
+        "counterMax": "X"
+    },
+    {
+        "ID": "50",
+        "name": "Notes from a Crazed Researcher",
+        "attackType": "X",
+        "damageRange": "0",
+        "rank": "HE",
+        "energyGiven": "X",
+        "counterMax": "X"
+    },
+    {
+        "ID": "51",
+        "name": "Flesh Idol",
+        "attackType": "X",
+        "damageRange": "0",
+        "rank": "WAW",
+        "energyGiven": "X",
+        "counterMax": "X"
+    },
+    {
+        "ID": "52",
+        "name": "Giant Tree Sap",
+        "attackType": "X",
+        "damageRange": "0",
+        "rank": "HE",
+        "energyGiven": "X",
+        "counterMax": "X"
+    },
+    {
+        "ID": "53",
+        "name": "Mirror of Adjustment",
+        "attackType": "X",
+        "damageRange": "0",
+        "rank": "ZAYIN",
+        "energyGiven": "X",
+        "counterMax": "X"
+    },
+    {
+        "ID": "54",
+        "name": "Shelter from the 27th of March",
+        "attackType": "X",
+        "damageRange": "0",
+        "rank": "HE",
+        "energyGiven": "X",
+        "counterMax": "X"
+    },
+    {
+        "ID": "55",
+        "name": "Fairy Festival",
+        "attackType": "RED",
+        "damageRange": "1 ^ 2",
+        "rank": "ZAYIN",
+        "energyGiven": "10",
+        "counterMax": "X"
+    },
+    {
+        "ID": "56",
+        "name": "Meat Lantern",
+        "attackType": "WHITE",
+        "damageRange": "1 ^ 3",
+        "rank": "TETH",
+        "energyGiven": "14",
+        "counterMax": "1"
+    },
+    {
+        "ID": "57",
+        "name": "We Can Change Anything",
+        "attackType": "X",
+        "damageRange": "0",
+        "rank": "ZAYIN",
+        "energyGiven": "X",
+        "counterMax": "X"
+    },
+    {
+        "ID": "58",
+        "name": "Express Train to Hell",
+        "attackType": "X",
+        "damageRange": "0",
+        "rank": "WAW",
+        "energyGiven": "X",
+        "counterMax": "X"
+    },
+    {
+        "ID": "59",
+        "name": "Scarecrow Searching for Wisdom",
+        "attackType": "WHITE",
+        "damageRange": "2 ^ 6",
+        "rank": "HE",
+        "energyGiven": "18",
+        "counterMax": "1"
+    },
+    {
+        "ID": "60",
+        "name": "Dimensional Refraction Variant",
+        "attackType": "WHITE",
+        "damageRange": "4 ^ 7",
+        "rank": "WAW",
+        "energyGiven": "22",
+        "counterMax": "2"
+    },
+    {
+        "ID": "61",
+        "name": "CENSORED",
+        "attackType": "BLACK",
+        "damageRange": "5 ^ 1",
+        "rank": "ALEPH",
+        "energyGiven": "32",
+        "counterMax": "2"
+    },
+    {
+        "ID": "62",
+        "name": "Skin Prophecy",
+        "attackType": "X",
+        "damageRange": "0",
+        "rank": "TETH",
+        "energyGiven": "X",
+        "counterMax": "X"
+    },
+    {
+        "ID": "63",
+        "name": "Portrait of Another World",
+        "attackType": "X",
+        "damageRange": "0",
+        "rank": "HE",
+        "energyGiven": "X",
+        "counterMax": "X"
+    },
+    {
+        "ID": "64",
+        "name": "Today's Shy Look",
+        "attackType": "BLACK",
+        "damageRange": "2 ^ 3",
+        "rank": "TETH",
+        "energyGiven": "12",
+        "counterMax": "X"
+    },
+    {
+        "ID": "65",
+        "name": "Blue Star",
+        "attackType": "WHITE",
+        "damageRange": "6 ^ 9",
+        "rank": "ALEPH",
+        "energyGiven": "33",
+        "counterMax": "2"
+    },
+    {
+        "ID": "66",
+        "name": "You Must Be Happy",
+        "attackType": "X",
+        "damageRange": "0",
+        "rank": "ZAYIN",
+        "energyGiven": "X",
+        "counterMax": "X"
+    },
+    {
+        "ID": "67",
+        "name": "Luminous Bracelet",
+        "attackType": "X",
+        "damageRange": "0",
+        "rank": "TETH",
+        "energyGiven": "X",
+        "counterMax": "X"
+    },
+    {
+        "ID": "68",
+        "name": "Behavior Adjustment",
+        "attackType": "X",
+        "damageRange": "0",
+        "rank": "TETH",
+        "energyGiven": "X",
+        "counterMax": "X"
+    },
+    {
+        "ID": "69",
+        "name": "Old Faith and Promise",
+        "attackType": "X",
+        "damageRange": "0",
+        "rank": "ZAYIN",
+        "energyGiven": "X",
+        "counterMax": "X"
+    },
+    {
+        "ID": "70",
+        "name": "Porccubus",
+        "attackType": "BLACK",
+        "damageRange": "1 ^ 5",
+        "rank": "HE",
+        "energyGiven": "18",
+        "counterMax": "2"
+    },
+    {
+        "ID": "71",
+        "name": "Void Dream",
+        "attackType": "BLACK",
+        "damageRange": "1 ^ 3",
+        "rank": "TETH",
+        "energyGiven": "14",
+        "counterMax": "2"
+    },
+    {
+        "ID": "72",
+        "name": "Grave of Cherry Blossoms",
+        "attackType": "WHITE",
+        "damageRange": "2 ^ 4",
+        "rank": "TETH",
+        "energyGiven": "12",
+        "counterMax": "3"
+    },
+    {
+        "ID": "73",
+        "name": "The Firebird",
+        "attackType": "RED",
+        "damageRange": "3 ^ 4",
+        "rank": "WAW",
+        "energyGiven": "24",
+        "counterMax": "3"
+    },
+    {
+        "ID": "74",
+        "name": "Yin",
+        "attackType": "BLACK",
+        "damageRange": "4 ^ 6",
+        "rank": "WAW",
+        "energyGiven": "20",
+        "counterMax": "2"
+    },
+    {
+        "ID": "75",
+        "name": "Yang",
+        "attackType": "X",
+        "damageRange": "0",
+        "rank": "WAW",
+        "energyGiven": "X",
+        "counterMax": "X"
+    },
+    {
+        "ID": "76",
+        "name": "Backward Clock",
+        "attackType": "X",
+        "damageRange": "0",
+        "rank": "WAW",
+        "energyGiven": "X",
+        "counterMax": "X"
+    },
+    {
+        "ID": "77",
+        "name": "Il Pianto della Luna",
+        "attackType": "WHITE",
+        "damageRange": "5 ^ 7",
+        "rank": "WAW",
+        "energyGiven": "20",
+        "counterMax": "3"
+    },
+    {
+        "ID": "78",
+        "name": "Army In Black",
+        "attackType": "WHITE",
+        "damageRange": "7 ^ 9",
+        "rank": "ZAYIN",
+        "energyGiven": "30",
+        "counterMax": "3"
+    },
+    {
+        "ID": "79",
+        "name": "Ppodae",
+        "attackType": "RED",
+        "damageRange": "2 ^ 3",
+        "rank": "TETH",
+        "energyGiven": "12",
+        "counterMax": "2"
+    },
+    {
+        "ID": "80",
+        "name": "Parasite Tree",
+        "attackType": "WHITE",
+        "damageRange": "5 ^ 6",
+        "rank": "WAW",
+        "energyGiven": "24",
+        "counterMax": "1"
+    },
+    {
+        "ID": "81",
+        "name": "Melting Love",
+        "attackType": "BLACK",
+        "damageRange": "4 ^ 1",
+        "rank": "ALEPH",
+        "energyGiven": "32",
+        "counterMax": "3"
+    },
+    {
+        "ID": "82",
+        "name": "Clouded Monk",
+        "attackType": "WHITE",
+        "damageRange": "4 ^ 6",
+        "rank": "WAW",
+        "energyGiven": "22",
+        "counterMax": "3"
+    },
+    {
+        "ID": "83",
+        "name": "You're Bald...",
+        "attackType": "BLACK",
+        "damageRange": "1 ^ 2",
+        "rank": "ZAYIN",
+        "energyGiven": "6",
+        "counterMax": "X"
+    }
+]
