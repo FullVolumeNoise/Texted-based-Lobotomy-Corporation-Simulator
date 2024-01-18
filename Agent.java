@@ -20,8 +20,9 @@ public class Agent {
     name = nameGenerator();
     HP = MaxHP;
   }
+
   public String nameGenerator(){
-    names = new String[]{"Daniel", "Mika", "Allen", "Viktor", "Jack", "Nick", "Ellen", "Susan", "Rogun", "Onorio", "Camille","Basil", "Dennis", "Ricardo" };
+    names = new String[]{"Daniel", "Mika", "Allen", "Viktor", "Jack", "Nick", "Ellen", "Susan", "Rogun", "Onorio", "Camille","Basil", "Dennis", "Ricardo", "Rikka" };
     int ran = (int)(Math.random() * (names.length));
     return names[ran];
   }
