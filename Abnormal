@@ -1,6 +1,0 @@
-public class Abnormal {
-  String name;
-  String quote;
-  String rank;
-
-}
