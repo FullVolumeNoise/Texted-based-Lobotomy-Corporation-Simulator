@@ -21,6 +21,17 @@ public class Agent {
     HP = MaxHP;
   }
 
+  public Agent(String name){
+    temperence = 1;
+    justice = 1;
+    SP =  (int)(Math.random() * (10)+10);
+    MaxHP =  (int)(Math.random() * (10)+15);
+    level = 1;
+    this.name = name;
+    HP = MaxHP;
+  }
+
+
   public String nameGenerator(){
     names = new String[]{"Daniel", "Mika", "Allen", "Viktor", "Jack", "Nick", "Ellen", "Susan", "Rogun", "Onorio", "Camille","Basil", "Dennis", "Ricardo", "Rikka" };
     int ran = (int)(Math.random() * (names.length));
@@ -119,8 +130,5 @@ public class Agent {
     person.justice += 1;
 
   }
-   public static void main(String[] args){
-     
-
-   }
+  
 }

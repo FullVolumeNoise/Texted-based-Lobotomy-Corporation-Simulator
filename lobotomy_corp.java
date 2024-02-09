@@ -22,12 +22,8 @@ public class lobotomy_corp{
   public static int energyNeeded;
   private static Hashtable<Integer, Abnormal> abnormDict = new Hashtable<Integer, Abnormal>();
   private static Hashtable<String, Agent> agentDict = new Hashtable<String, Agent>();
-  private static ArrayList<Integer> IDNums = new ArrayList<Integer>();
+
   private static ArrayList<Abnormal> Monsters = new ArrayList<Abnormal>();
-
-  private static ArrayList<Abnormal> inFacility = new ArrayList<Abnormal>();
-
-
 
   public static Agent HireAgents(){
     Agent beck = new Agent();
@@ -90,7 +86,13 @@ public class lobotomy_corp{
 
 
   public static void main (String[] args) {
+    
     parseAbnormalities();
+    HireAgents();
+
+    
+    Monsters.get(4).workCycle(new Agent("Tabitha"));
+
 
   }
 

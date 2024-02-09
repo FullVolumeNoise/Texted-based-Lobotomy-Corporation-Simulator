@@ -17,6 +17,8 @@ public class Abnormal {
   String escapeType;
   public int damageAmt;
 
+  int workCounter = 0;
+
   /**
    * RANKS: ZAYIN, TETH, HE, WAW, ALEPH
    * Damage Type: RED, WHITE, BLACK, PALE
@@ -48,6 +50,119 @@ public class Abnormal {
 
 
   }
+
+  public void workCycle(Agent person){
+    if( this.rank.equals("ZAYIN") ) {
+
+      while (workCounter < 10 && person.HP != 0 && person.SP != 0) {
+
+        if (this.damageType.equals("white")) {
+          person.SP -= 1;
+        } else if(this.damageType.equals("red") ) {
+          person.HP -= 1;
+        } else if(this.damageType.equals("black") ) {
+          person.HP -= 1;
+          person.SP -= 1;
+        } else if(this.damageType.equals("pale") ) {
+         person.HP -= person.MaxHP * 0.05; 
+        }
+
+        System.out.println( person.name + " has finished work with " + this.name + ".");
+        System.out.println( "Their final health stats are: ");
+        System.out.println( "Health: "+ person.HP);
+        System.out.println( "Sanity: "+ person.SP);
+        workCounter += 1;
+      } //while loop
+
+    } //if statement 
+
+    if( this.rank.equals("TETH") ) {
+
+      while (workCounter < 12 && person.HP != 0 && person.SP != 0) {
+
+        if (this.damageType.equals("white")) {
+          person.SP -= 1;
+        } else if(this.damageType.equals("red") ) {
+          person.HP -= 1;
+        } else if(this.damageType.equals("black") ) {
+          person.HP -= 1;
+          person.SP -= 1;
+        } else if(this.damageType.equals("pale") ) {
+         person.HP -= person.MaxHP * 0.05; 
+        }
+
+        workCounter += 1;
+      } //while loop
+
+    } //if statement 
+
+    if( this.rank.equals("HE") ) {
+
+      while (workCounter < 18 && person.HP != 0 && person.SP != 0) {
+
+        if (this.damageType.equals("white")) {
+          person.SP -= 1;
+        } else if(this.damageType.equals("red") ) {
+          person.HP -= 1;
+        } else if(this.damageType.equals("black") ) {
+          person.HP -= 1;
+          person.SP -= 1;
+        } else if(this.damageType.equals("pale") ) {
+         person.HP -= person.MaxHP * 0.05; 
+        }
+
+        workCounter += 1;
+      } //while loop
+
+    } //if statement 
+
+
+    if( this.rank.equals("WAW") ) {
+
+      while (workCounter < 22 && person.HP != 0 && person.SP != 0) {
+
+        if (this.damageType.equals("white")) {
+          person.SP -= 1;
+        } else if(this.damageType.equals("red") ) {
+          person.HP -= 1;
+        } else if(this.damageType.equals("black") ) {
+          person.HP -= 1;
+          person.SP -= 1;
+        } else if(this.damageType.equals("pale") ) {
+         person.HP -= person.MaxHP * 0.05; 
+        }
+
+        workCounter += 1;
+      } //while loop
+
+    } //if statement 
+
+    if( this.rank.equals("ALEPH") ) {
+
+      while (workCounter < 30 && person.HP != 0 && person.SP != 0) {
+
+        if (this.damageType.equals("white")) {
+          person.SP -= 1;
+        } else if(this.damageType.equals("red") ) {
+          person.HP -= 1;
+        } else if(this.damageType.equals("black") ) {
+          person.HP -= 1;
+          person.SP -= 1;
+        } else if(this.damageType.equals("pale") ) {
+         person.HP -= person.MaxHP * 0.05; 
+        }
+
+        workCounter += 1;
+      } //while loop
+
+    } //if statement 
+
+
+    workCounter = 0;
+
+
+  }
+
 
 
   public String statCheck(Agent person, String stat, int min, int max){
