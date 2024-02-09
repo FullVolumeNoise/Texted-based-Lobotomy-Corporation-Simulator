@@ -67,13 +67,12 @@ public class Abnormal {
          person.HP -= person.MaxHP * 0.05; 
         }
 
-        System.out.println( person.name + " has finished work with " + this.name + ".");
-        System.out.println( "Their final health stats are: ");
-        System.out.println( "Health: "+ person.HP);
-        System.out.println( "Sanity: "+ person.SP);
         workCounter += 1;
       } //while loop
-
+      System.out.println( person.name + " has finished work with " + this.name + ".");
+      System.out.println( "Their final health stats are: ");
+      System.out.println( "Health: "+ person.HP);
+      System.out.println( "Sanity: "+ person.SP);
     } //if statement 
 
     if( this.rank.equals("TETH") ) {
@@ -94,26 +93,33 @@ public class Abnormal {
         workCounter += 1;
       } //while loop
 
+      System.out.println( person.name + " has finished work with " + this.name + ".");
+      System.out.println( "Their final health stats are: ");
+      System.out.println( "Health: "+ person.HP);
+      System.out.println( "Sanity: "+ person.SP);
     } //if statement 
 
     if( this.rank.equals("HE") ) {
 
       while (workCounter < 18 && person.HP != 0 && person.SP != 0) {
 
-        if (this.damageType.equals("white")) {
+        if (this.damageType.equals("WHITE")) {
           person.SP -= 1;
-        } else if(this.damageType.equals("red") ) {
+        } else if(this.damageType.equals("RED") ) {
           person.HP -= 1;
-        } else if(this.damageType.equals("black") ) {
+        } else if(this.damageType.equals("BLACK") ) {
           person.HP -= 1;
           person.SP -= 1;
-        } else if(this.damageType.equals("pale") ) {
+        } else if(this.damageType.equals("PALE") ) {
          person.HP -= person.MaxHP * 0.05; 
         }
 
         workCounter += 1;
       } //while loop
-
+      System.out.println( person.name + " has finished work with " + this.name + ".");
+      System.out.println( "Their final health stats are: ");
+      System.out.println( "Health: "+ person.HP);
+      System.out.println( "Sanity: "+ person.SP);
     } //if statement 
 
 
@@ -121,40 +127,47 @@ public class Abnormal {
 
       while (workCounter < 22 && person.HP != 0 && person.SP != 0) {
 
-        if (this.damageType.equals("white")) {
+        if (damageType.equals("white")) {
           person.SP -= 1;
-        } else if(this.damageType.equals("red") ) {
+        } else if(damageType.equals("red") ) {
           person.HP -= 1;
-        } else if(this.damageType.equals("black") ) {
+        } else if(damageType.equals("black") ) {
           person.HP -= 1;
           person.SP -= 1;
-        } else if(this.damageType.equals("pale") ) {
+        } else if(damageType.equals("pale") ) {
          person.HP -= person.MaxHP * 0.05; 
         }
-
+      
         workCounter += 1;
       } //while loop
 
+      System.out.println( person.name + " has finished work with " + this.name + ".");
+      System.out.println( "Their final health stats are: ");
+      System.out.println( "Health: "+ person.HP);
+      System.out.println( "Sanity: "+ person.SP);
     } //if statement 
 
     if( this.rank.equals("ALEPH") ) {
 
       while (workCounter < 30 && person.HP != 0 && person.SP != 0) {
 
-        if (this.damageType.equals("white")) {
+        if (damageType.equals("white")) {
           person.SP -= 1;
-        } else if(this.damageType.equals("red") ) {
+        } else if(damageType.equals("red") ) {
           person.HP -= 1;
-        } else if(this.damageType.equals("black") ) {
+        } else if(damageType.equals("black") ) {
           person.HP -= 1;
           person.SP -= 1;
-        } else if(this.damageType.equals("pale") ) {
+        } else if(damageType.equals("pale") ) {
          person.HP -= person.MaxHP * 0.05; 
         }
 
         workCounter += 1;
       } //while loop
-
+      System.out.println( person.name + " has finished work with " + this.name + ".");
+      System.out.println( "Their final health stats are: ");
+      System.out.println( "Health: "+ person.HP);
+      System.out.println( "Sanity: "+ person.SP);
     } //if statement 
 
 
