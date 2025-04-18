@@ -1,6 +1,24 @@
 {
     "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "json-simple-1.1.1.jar"
+        "mariadb-java-client-3.5.3.jar",
+        "c:\\Users\\funma\\Texted-based-Lobotomy-Corporation-Simulator\\json-simple-1.1.1.jar"
+    ],
+    "java.project.sourcePaths": [
+        "."
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "personalprojects",
+            "database": "lobcorp",
+            "username": "root"
+        }
     ]
 }
