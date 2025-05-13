@@ -17,6 +17,7 @@ import org.json.simple.JSONValue;
 public class TestFacility {
 
     private static Connection connection;
+
     public static void main(String[] args) throws SQLException {
 		try {
 			initDatabaseConnection();
@@ -48,13 +49,14 @@ public class TestFacility {
     private static void readData() throws SQLException {
 		try (PreparedStatement statement = connection.prepareStatement("""
 				    SELECT name
-				    FROM abnormalities
+				    FROM abnormalities WHERE armors_id = 1
 				""")) {
 			try (ResultSet resultSet = statement.executeQuery()) {
 				boolean empty = true;
 				while (resultSet.next()) {
 					empty = false;
 					String name = resultSet.getString("name");
+
 				//	int rating = resultSet.getInt("pl_rating");
 					System.out.println("\t> " + name);
 				}
