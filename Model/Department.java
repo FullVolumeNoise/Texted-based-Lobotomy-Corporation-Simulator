@@ -2,10 +2,17 @@ package Model;
 import java.util.ArrayList;
 
 public class Department {
+    int departmentID;
     ArrayList<Agent> Agents; //limit to 5
     ArrayList<Abnormal> Abnos; //limit to 4
 
     public String deptName;
+
+    public Department(){
+        Agents = new ArrayList<>();
+        Abnos = new ArrayList<>();
+        this.deptName = "Control Department";
+    }
 
     public Department(String deptName){
         this.deptName = deptName;
@@ -21,7 +28,7 @@ public class Department {
             Agents.remove(agent);
             return agent.name + " was removed from " + deptName;
         }
-        return agent.name + " is not placed in " + deptName + " department.";
+        return agent.name + " has been removed from " + deptName + " department.";
 
     }
 

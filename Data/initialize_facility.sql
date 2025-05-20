@@ -1,7 +1,15 @@
 USE lobcorp;
 
+DROP TABLE IF EXISTS abnormalities;
+
+DROP TABLE IF EXISTS agents;
+
+DROP TABLE IF EXISTS weapons;
+
+DROP TABLE IF EXISTS armors;
+
 CREATE TABLE weapons (
-    weapon_id INT,
+    weapon_id INT primary key,
     abnormality_source_id INT,
     cost INT,
     max_count INT,
@@ -12,7 +20,7 @@ CREATE TABLE weapons (
 );
 
 CREATE TABLE armors (
-    armor_id INT,
+    armor_id INT primary key,
     abnormality_source_id INT,
     cost INT,
     max_count INT,
@@ -20,7 +28,7 @@ CREATE TABLE armors (
 );
 
 CREATE TABLE agents (
-    agent_id INT NOT NULL,
+    agent_id INT NOT NULL primary key,
     name VARCHAR(100) NOT NULL,
     department_id VARCHAR(50),
     current_level INT NOT NULL,
@@ -39,6 +47,7 @@ CREATE TABLE abnormalities (
     quote VARCHAR(500) NOT NULL,
     description VARCHAR(800)NOT NULL,
     rank CHAR(50) NOT NULL,
+    damage_type VARCHAR(50),
     counter_max INT,
     current_counter_value INT,
     max_energy_given INT,
@@ -84,24 +93,24 @@ INSERT INTO armors (
 
 
 INSERT INTO abnormalities (
-    abnormality_id, name, quote, description, rank, counter_max, current_counter_value,
+    abnormality_id, name, quote, description, rank,  damage_type, counter_max, current_counter_value,
     max_energy_given, breachable, armors_id, weapons_id, department_id, currentlyBreaching
 ) VALUES
 (1, 'Scorched Girl', "I am coming to you. You, who will be reduced to ash like me.", 
 'The Scorched Girl (F-01-02) is an Abnormality in the form of a charred figure resembling a young girl. She has white eyes, a white open mouth, two thin legs, scorched ponytails, and the burnt tip of a lit match penetrating her torso. ', 
-'TETH', 2, 2, 12, TRUE, NULL, NULL, NULL, FALSE),
+'TETH', 'RED', 2, 2, 12, TRUE, NULL, NULL, NULL, FALSE),
 (2, 'One Sin and Hundreds of Good Deeds', 'It feeds on the “evil” that seeps out during conversations between people.',
  'One Sin and Hundreds of Good Deeds (O-03-03), commonly referred to as One Sin, is a relatively harmless Abnormality that is in the shape of a levitating cross, seemingly melded with a skull, both of which are bound tightly together by a thorn crown. ',
-  'ZAYIN', NULL, NULL, 10, FALSE, NULL, NULL, NULL, FALSE),
+  'ZAYIN', 'WHITE', NULL, NULL, 10, FALSE, NULL, NULL, NULL, FALSE),
 (3, 'The Queen of Hatred', 'In the name of Love and Justice~ Here comes Magical Girl!',
  'The Queen of Hatred (O-01-04), also known as Magical Girl is an Abnormality resembling a young, pale-skinned girl. She has large, yellow, stylized eyes and four-fingered hands. Her long hair has a pastel blue and purple gradient as coloration with two strands curled away in the shape of antenna. She wears white tights with pink accents, a pink, layered/pleated skirt, a pink shirt with white sleeves, and a large pink ribbon on her chest to match. She has two wing-like pieces on her shoulders and a pink and black heart clip in her hair. Beside her is a pink staff topped with a winged a star which has a heart-shaped hole at its center. Its grip is striped with yellow and pink, and the base is tipped with a pale blue heart with a pink star in the center. ',
-  'WAW', 2, NULL, 22, TRUE, NULL, NULL, NULL, FALSE),
+  'WAW', 'BLACK', 2, NULL, 22, TRUE, NULL, NULL, NULL, FALSE),
 (4, 'Happy Teddy Bear', 'Its memories began with a warm hug.', 'Happy Teddy Bear (T-04-06) AKA A Teddy Bear is a large, worn-out teddy bear with a chewed ear, a single white button eye, a black hole in place of the other eye, brown matted fur, a light brown muzzle, and a faded green bowtie around its neck. Its stuffing spills out from multiple tears in its fabric.',
  'HE', NULL, NULL, 15, FALSE, NULL, NULL, NULL, FALSE),
 (5, 'Red Shoes', 'The girl begged in tears. "Mister, please cut off my feet..."', 'The Red Shoes (O-04-08) are a pair of shiny red high-heels. They sit upon a lilac pillow atop a white podium. The shoes seem to have an abnormal gloss despite their age. It is implied that the shoes have teeth hidden in their confines which bite into skin with extraordinary strength when put on a foot, using so much force that the shoes are irremovable through physical means alone.',
- 'HE', 1, NULL, 16 , FALSE, NULL, NULL, NULL, FALSE),
+ 'HE', 'RED',1, NULL, 16 , FALSE, NULL, NULL, NULL, FALSE),
 (6, 'Theresia', "'Do you remember this melody? The professor used to play this song when the students were sleepy. Happy birthday.'", "Theresia (T-09-09) is a TETH Tool Abnormality in the form of an ornate and bloodied music box that rests on a blood-soaked wooden stool. There's a wind-up key on the side of the music box and a ballerina performing an arabesque pose on its top. While in use, a cacophonous music box tune can be heard. ",
- 'TETH', NULL, NULL, NULL, FALSE, NULL, NULL, NULL, NULL);
+ 'TETH', 'WHITE', NULL, NULL, NULL, FALSE, NULL, NULL, NULL, NULL);
 
 SELECT * FROM abnormalities;
 SELECT * FROM agents;

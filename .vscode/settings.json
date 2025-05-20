@@ -1,7 +1,8 @@
 {
     "java.project.referencedLibraries": [
-        "mariadb-java-client-3.5.3.jar",
-        "c:\\Users\\funma\\Texted-based-Lobotomy-Corporation-Simulator\\json-simple-1.1.1.jar"
+        "c:\\Users\\Alexandria\\Documents\\mariadb-java-client-3.5.3.jar",
+        "c:\\Users\\Alexandria\\Documents\\CodingProjects\\Texted-based-Lobotomy-Corporation-Simulator\\Dependencies\\json-simple-1.1.1.jar",
+        "c:\\Users\\Alexandria\\Documents\\CodingProjects\\Texted-based-Lobotomy-Corporation-Simulator\\Dependencies\\mariadb-java-client-3.5.3.jar"
     ],
     "java.project.sourcePaths": [
         "."

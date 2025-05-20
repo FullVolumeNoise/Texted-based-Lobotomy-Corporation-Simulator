@@ -5,6 +5,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+
 import Model.Abnormal;
 import Model.Agent;
 
@@ -107,8 +109,9 @@ public class db {
 	}
 
 	//armors_id, weapons_id, department_id, currentlyBreaching 
-    public static void getAbnormalitiesFromDB() throws SQLException {
+    public static ArrayList<Abnormal> getAbnormalitiesFromDB() throws SQLException {
 		initDatabaseConnection();
+		ArrayList<Abnormal> abnormalities = new ArrayList<>();
 		try (PreparedStatement statement = connection.prepareStatement("""
 				    SELECT abnormality_id, name, quote, description,
 					rank, counter_max, current_counter_value, max_energy_given, breachable
@@ -133,7 +136,7 @@ public class db {
 
 					Abnormal thing = new Abnormal(abnormality_id, name, rank, counterMax, currentCounter, maxEnergyGiven, false, 1, 1, 1, false, "BLACK");
 					System.out.println(thing);
-
+					abnormalities.add(thing);
 				//	int rating = resultSet.getInt("pl_rating");
 					System.out.println("\t> " + name + ", " + quote);
 				}
@@ -143,5 +146,7 @@ public class db {
 			}
 		}
 		closeDatabaseConnection() ;
+
+		return abnormalities;
 	}
 }

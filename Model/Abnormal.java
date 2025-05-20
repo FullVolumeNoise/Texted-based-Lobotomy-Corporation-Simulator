@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import Data.db;
 
 public class Abnormal {
-  
 
   int ID;
   String name;
@@ -70,82 +69,63 @@ public class Abnormal {
     
   }
 
+  public void whiteWorkCycle(Agent person){}
 
   public void workCycle(Agent person){
-    if( this.rank.equals("ZAYIN") ) {
+    switch (this.rank) {
+      case "ZAYIN":
+        while (workCounter < 10 && person.HP != 0 && person.SP != 0) {
+          if (this.damageType.equals("white")) {
+            person.SP -= 1;
+          } else if(this.damageType.equals("red") ) {
+            person.HP -= 1;
+          } else if(this.damageType.equals("black") ) {
+            person.HP -= 1;
+            person.SP -= 1;
+          } else if(this.damageType.equals("pale") ) {
+          person.HP -= person.MaxHP * 0.05; 
+          }
+          workCounter += 1;
+        } //while loop
+       
+        break;
+      
+      case "TETH": 
+        while (workCounter < 12 && person.HP != 0 && person.SP != 0) {
 
-      while (workCounter < 10 && person.HP != 0 && person.SP != 0) {
+          if (this.damageType.equals("white")) {
+            person.SP -= 1;
+          } else if(this.damageType.equals("red") ) {
+            person.HP -= 1;
+          } else if(this.damageType.equals("black") ) {
+            person.HP -= 1;
+            person.SP -= 1;
+          } else if(this.damageType.equals("pale") ) {
+          person.HP -= person.MaxHP * 0.05; 
+          }
+          workCounter += 1;
+        } //while loop
 
-        if (this.damageType.equals("white")) {
-          person.SP -= 1;
-        } else if(this.damageType.equals("red") ) {
-          person.HP -= 1;
-        } else if(this.damageType.equals("black") ) {
-          person.HP -= 1;
-          person.SP -= 1;
-        } else if(this.damageType.equals("pale") ) {
-         person.HP -= person.MaxHP * 0.05; 
-        }
+      case "HE":
+        while (workCounter < 18 && person.HP != 0 && person.SP != 0) {
 
-        workCounter += 1;
+          if (this.damageType.equals("WHITE")) {
+            person.SP -= 1;
+          } else if(this.damageType.equals("RED") ) {
+            person.HP -= 1;
+          } else if(this.damageType.equals("BLACK") ) {
+            person.HP -= 1;
+            person.SP -= 1;
+          } else if(this.damageType.equals("PALE") ) {
+          person.HP -= person.MaxHP * 0.05; 
+          }
+
+          workCounter += 1;
       } //while loop
-      System.out.println( person.name + " has finished work with " + this.name + ".");
-      System.out.println( "Their final health stats are: ");
-      System.out.println( "Health: "+ person.HP);
-      System.out.println( "Sanity: "+ person.SP);
-    } //if statement 
-
-    if( this.rank.equals("TETH") ) {
-
-      while (workCounter < 12 && person.HP != 0 && person.SP != 0) {
-
-        if (this.damageType.equals("white")) {
-          person.SP -= 1;
-        } else if(this.damageType.equals("red") ) {
-          person.HP -= 1;
-        } else if(this.damageType.equals("black") ) {
-          person.HP -= 1;
-          person.SP -= 1;
-        } else if(this.damageType.equals("pale") ) {
-         person.HP -= person.MaxHP * 0.05; 
-        }
-
-        workCounter += 1;
-      } //while loop
-
-      System.out.println( person.name + " has finished work with " + this.name + ".");
-      System.out.println( "Their final health stats are: ");
-      System.out.println( "Health: "+ person.HP);
-      System.out.println( "Sanity: "+ person.SP);
-    } //if statement 
-
-    if( this.rank.equals("HE") ) {
-
-      while (workCounter < 18 && person.HP != 0 && person.SP != 0) {
-
-        if (this.damageType.equals("WHITE")) {
-          person.SP -= 1;
-        } else if(this.damageType.equals("RED") ) {
-          person.HP -= 1;
-        } else if(this.damageType.equals("BLACK") ) {
-          person.HP -= 1;
-          person.SP -= 1;
-        } else if(this.damageType.equals("PALE") ) {
-         person.HP -= person.MaxHP * 0.05; 
-        }
-
-        workCounter += 1;
-      } //while loop
-      System.out.println( person.name + " has finished work with " + this.name + ".");
-      System.out.println( "Their final health stats are: ");
-      System.out.println( "Health: "+ person.HP);
-      System.out.println( "Sanity: "+ person.SP);
-    } //if statement 
 
 
-    if( this.rank.equals("WAW") ) {
-
-      while (workCounter < 22 && person.HP != 0 && person.SP != 0) {
+      case "WAW":
+         while (workCounter < 22 && person.HP != 0 && person.SP != 0) {
 
         if (damageType.equals("white")) {
           person.SP -= 1;
@@ -161,38 +141,32 @@ public class Abnormal {
         workCounter += 1;
       } //while loop
 
-      System.out.println( person.name + " has finished work with " + this.name + ".");
-      System.out.println( "Their final health stats are: ");
-      System.out.println( "Health: "+ person.HP);
-      System.out.println( "Sanity: "+ person.SP);
-    } //if statement 
+      case "ALEPH":
+        while (workCounter < 30 && person.HP != 0 && person.SP != 0) {
 
-    if( this.rank.equals("ALEPH") ) {
+          if (damageType.equals("white")) {
+            person.SP -= 1;
+          } else if(damageType.equals("red") ) {
+            person.HP -= 1;
+          } else if(damageType.equals("black") ) {
+            person.HP -= 1;
+            person.SP -= 1;
+          } else if(damageType.equals("pale") ) {
+          person.HP -= person.MaxHP * 0.05; 
+          }
 
-      while (workCounter < 30 && person.HP != 0 && person.SP != 0) {
+          workCounter += 1;
+        } //while loop
 
-        if (damageType.equals("white")) {
-          person.SP -= 1;
-        } else if(damageType.equals("red") ) {
-          person.HP -= 1;
-        } else if(damageType.equals("black") ) {
-          person.HP -= 1;
-          person.SP -= 1;
-        } else if(damageType.equals("pale") ) {
-         person.HP -= person.MaxHP * 0.05; 
-        }
-
-        workCounter += 1;
-      } //while loop
-      System.out.println( person.name + " has finished work with " + this.name + ".");
-      System.out.println( "Their final health stats are: ");
-      System.out.println( "Health: "+ person.HP);
-      System.out.println( "Sanity: "+ person.SP);
-    } //if statement 
-
-
-    workCounter = 0;
-
+      default:
+        workCounter = 0;
+        break;
+    }
+ 
+    System.out.println( person.name + " has finished work with " + this.name + ".");
+    System.out.println( "Their final health stats are: ");
+    System.out.println( "Health: "+ person.HP);
+    System.out.println( "Sanity: "+ person.SP);
 
   }
 
@@ -239,7 +213,7 @@ public class Abnormal {
     return "";
   }
 
-  public String Fortitude(Agent person){
+  public String fortitudeWork(Agent person){
     if(rank.equals("TETH")){
       person.HP -= 3;
       person.MaxHP += 1;
@@ -302,9 +276,6 @@ public class Abnormal {
 
   }
 
-  public void lure(){
-
-  }
 
   // public String toString(){
   //   StringBuilder total;

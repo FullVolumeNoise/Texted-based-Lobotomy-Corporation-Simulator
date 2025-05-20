@@ -2,9 +2,14 @@ package Model;
 import java.util.ArrayList;
 import java.lang.*;
 
+/**
+ * Agents can be created and destroyed (killed). Agents can work with one abnormality at a time. 
+ * Agents may take HP and/or SP damage during work with abnormalities.
+ */
 
 public class Agent {
-  public int department;
+  /** Relevant Agent Stats */
+  public int departmentID;
   public int SP;
   public int HP;
   public int level;
@@ -52,6 +57,8 @@ public class Agent {
     return names[ran];
   }
 
+
+  /** Gameplay Mechanics */
   public void damage(Agent person, Abnormal creature){
     /**
      * RED: Targets Health Points.
@@ -130,19 +137,16 @@ public class Agent {
     person.MaxHP += 1;
 
   }
-  public void TempUp(Agent person){
+  public void temperenceUp(Agent person){
     person.temperence += 1;
-
   }
 
   public void sanityUp(Agent person){
     person.MaxSP += 1;
-
   }
 
   public void justiceUp(Agent person){
     person.justice += 1;
-
   }
   
 }
